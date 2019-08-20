@@ -1,18 +1,20 @@
 
+// interface describes the shape of an object -> see also "duck typing" and "structural subtyping"
+// no need for 'implements' clause
+interface Person {
+    firstName: string;
+    lastName: string;
+
+}
+
 class Student {
     fullName: string;
 
+    // public keyword allows creation of corresponding properties
     constructor(public firstName: string, public middleInitial: string, public lastName: string) {
 
         this.fullName = firstName + " " + middleInitial + ". " + lastName;
     }
-
-}
-
-// interface describes the shape of an object -> see also "duck typing" and "structural subtyping"
-interface Person {
-    firstName: string;
-    lastName: string;
 
 }
 

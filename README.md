@@ -12,7 +12,7 @@ tsc greeter.ts --outFile test.js
 
 ## Change output directory
 
-*directory can be inexistent*
+*directory can be inexistent*  
 tsc greeter.ts --outDir newFolder
 
 ## Compile a project
