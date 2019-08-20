@@ -9,7 +9,7 @@ class Student {
 
 }
 
-
+// interface describes the shape of an object -> see also "duck typing" and "structural subtyping"
 interface Person {
     firstName: string;
     lastName: string;
@@ -23,6 +23,6 @@ function greeter(person: Person) {
 
 let user = { firstName: "Fabrice", lastName: "Tsiava" };
 
-let student = new Student ("Fabrice", "N", "Tsiava" );
+let student = new Student("Fabrice", "N", "Tsiava");
 
 document.body.textContent = greeter(student);
